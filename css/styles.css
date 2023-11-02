@@ -1,0 +1,104 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-image: url(/fondo.webp);
+  background-size: cover;
+  background-position: center;
+}
+body main {
+  display: flex;
+}
+body main .loing {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: rgb(255, 255, 255);
+  border-radius: 10px;
+  width: 15em;
+}
+body main .loing .title {
+  display: flex;
+  justify-content: center;
+  color: rgb(131, 131, 244);
+  font-weight: 600;
+  font-size: 2em;
+  margin-top: 1em;
+}
+body main .loing .content-date {
+  display: flex;
+  flex-direction: column;
+  margin: 1.2em;
+  gap: 1.1em;
+}
+body main .loing .content-date input {
+  height: 2em;
+  border: none;
+  border-radius: 1em;
+  background-color: rgb(242, 239, 239);
+  outline: none;
+  padding-left: 0.5em;
+}
+body main .button-accept {
+  width: 5.5em;
+  height: 2.8em;
+  border-radius: 1.5em;
+  background: rgb(131, 131, 244);
+  color: white;
+  border: none;
+  margin: 1.2em;
+  cursor: pointer;
+  font-weight: 700;
+}
+body main .button-accept:hover {
+  background: rgb(85, 85, 247);
+}
+body .questions {
+  -webkit-backdrop-filter: blur(12px);
+          backdrop-filter: blur(12px);
+  border-radius: 1.5em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 4.5em;
+  padding: 1.5em;
+  width: 15em;
+}
+body .questions span {
+  color: white;
+}
+body .questions span p {
+  font-weight: 600;
+  font-size: 1.4em;
+  margin-bottom: 1.3em;
+}
+body .questions .button-registro {
+  background: none;
+  border-radius: 1.5em;
+  border-color: white;
+  height: 2.8em;
+  width: 12em;
+  color: white;
+  cursor: pointer;
+  margin-bottom: -26px;
+}
+
+@media screen and (max-width: 470px) {
+  body {
+    background-repeat: no-repeat;
+  }
+  main {
+    display: flex;
+    flex-direction: column;
+  }
+}/*# sourceMappingURL=styles.css.map */
